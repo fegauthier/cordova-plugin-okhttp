@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-okhttp"
+        version="1.0.0">
+
+    <name>OkHTTP</name>
+    <description>Cordova Plugin implementing OkHTTP</description>
+    <keywords>ecosystem:cordova,cordova-android,cordova,android</keywords>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova-android" version=">=4.0.0"/>
+    </engines>
+
+    <asset src="www/okhttp.js" target="js/okhttp.js"/>
+
+    <js-module src="www/okhttp.js" name="OkHTTP">
+        <clobbers target="OkHTTP"/>
+    </js-module>
+
+    <platform name="android">
+        <framework src="com.google.android.exoplayer:exoplayer:2.9.6"/>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OkHTTP">
+                <param name="android-package" value="cordova.plugin.okhttp.Plugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Plugin.java" target-dir="src/co/frontyard/cordova/plugin/exoplayer/"/>
+    </platform>
+</plugin>

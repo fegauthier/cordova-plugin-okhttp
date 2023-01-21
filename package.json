@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-okhttp",
+  "version": "1.0.0",
+  "description": "Cordova Plugin OkHTTP",
+  "cordova": {
+    "id": "cordova-plugin-okhttp",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fegauthier/cordova-plugin-okhttp.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova",
+    "android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=4.0.0"
+    }
+  ],
+  "author": "Nedim Cholich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fegauthier/cordova-plugin-okhttp/issues"
+  },
+  "homepage": "https://github.com/fegauthier/cordova-plugin-okhttp#readme",
+  "devDependencies": {
+    "jshint": "^2.9.0"
+  }
+}
