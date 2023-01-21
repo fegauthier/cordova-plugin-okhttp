@@ -19,7 +19,7 @@
     </js-module>
 
     <platform name="android">
-        <framework src="com.google.android.exoplayer:exoplayer:2.9.6"/>
+        <framework src="com.squareup.okhttp3:okhttp:4.10.0"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="OkHTTP">
