@@ -37,11 +37,11 @@ public class Plugin extends CordovaPlugin {
             if (action.equals("show")) {
                 JSONObject params = data.optJSONObject(0);
 
-                new CallbackResponse(callbackContext).send(PluginResult.Status.NO_RESULT, true);
+                callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, "WORKS"));
                 return true;
             }
             else {
-                new CallbackResponse(callbackContext).send(PluginResult.Status.INVALID_ACTION, false);
+                callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.ERROR, "Error"));
                 return false;
             }
         }
