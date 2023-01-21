@@ -46,7 +46,7 @@ public class Plugin extends CordovaPlugin {
             }
         }
         catch (Exception e) {
-            new CallbackResponse(callbackContext).send(PluginResult.Status.JSON_EXCEPTION, false);
+            callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.JSON_EXCEPTION, "Error"));
             return false;
         }
     }
