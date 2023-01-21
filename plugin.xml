@@ -27,6 +27,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/Plugin.java" target-dir="src/co/frontyard/cordova/plugin/exoplayer/"/>
+        <source-file src="src/android/Plugin.java" target-dir="src/cordova/plugin/okhttp/"/>
     </platform>
 </plugin>
