@@ -34,7 +34,7 @@ public class Plugin extends CordovaPlugin {
     public boolean execute(final String action, final JSONArray data, final CallbackContext callbackContext) throws JSONException {
         try {
             final Plugin self = this;
-            if (action.equals("show")) {
+            if (action.equals("get")) {
                 JSONObject params = data.optJSONObject(0);
 
                 callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, "WORKS"));
